@@ -1,3 +1,6 @@
+// given an array of words and a target, determine whether the target can be obtained
+// by concatenating combination of words of the array
+
 const allConstruct = (target, wordBank) => {
     const table = Array(target.length + 1).fill().map(() => []);
     table[0] = [

@@ -1,14 +1,19 @@
+// given an array of words and a target, return all possible ways the target can be obtained
+// by concatenating combination of words of the array
+
 const allConstruct = (target, wordBank, memo = {}) => {
-    if(target in memo) return memo[target];
-    if(target == '') return [[]];
+    if (target in memo) return memo[target];
+    if (target == '') return [
+        []
+    ];
     let result = [];
     for (let word of wordBank) {
-        if (target.indexOf(word) == 0){
+        if (target.indexOf(word) == 0) {
             let suffix = target.slice(word.length);
             let suffixWays = allConstruct(suffix, wordBank);
             let targetWays = suffixWays.map(way => [word, ...way]);
             result.push(...targetWays);
-        }        
+        }
     }
     memo[target] = result;
     return result;
