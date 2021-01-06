@@ -1,4 +1,12 @@
 Dynamic Programming Problems
 
 1. find the nth number in the fibonacci sequence
-2. 
+2. find the number of ways to reach from start (left-top) to end (bottom-right) in a m*n grid when you are only allowed to move right and down
+3. given an array of non-negative numbers and a targetSum, determine whether the targetSum can be obtained by summing a combination of numbers of the array
+4. given an array of non-negative numbers and a targetSum, if the targetSum can be obtained by summing a combination of numbers of the array, 
+	return the combination in a new array. In case of multiple possible combinations, return any combination, else return null
+5. given an array of non-negative numbers and a targetSum, if the targetSum can be obtained by summing a combination of numbers of the array, 
+	return the smallest such combination in a new array, else return null
+6. given an array of words and a target, determine whether the target can be obtained by concatenating combination of words of the array
+7. given an array of words and a target, determine in how many ways can the target be obtained by concatenating combination of words of the array
+8. given an array of words and a target, return all possible ways the target can be obtained by concatenating combination of words of the array
